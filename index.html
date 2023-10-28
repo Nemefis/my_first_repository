@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая веб-страница</title>
+</head>
+<body>
+    <form>
+        <p align="center"><input type="text" name="username" placeholder="Введите ваше имя"></p>
+        <p align="center"><input type="password" name="password" placeholder="Введите пароль" minlength="8" required></p>
+            <p align="center">
+                <label for="role"><b>Выберите вашу роль:</b></label><br>
+                <select name="role" id="role">
+                    <option value="student">Студент</option>
+                    <option value="teacher">Учитель</option>
+                    <option value="admin">Администратор</option>
+                </select>
+            </p>
+            <p align="center">Предпочитаемый способ связи:</p>
+            <p align="center">
+                <label>
+                    <input type="radio" name="contact" value="email" required>Электронная почта
+                </label><br>
+                <label>
+                    <input type="radio" name="contact" value="phone"> Телефон
+                </label>
+            </p>
+            <p align="center">Выберите интересующие вас темы:</p>
+            <p align="center">
+                <label>
+                    <input type="checkbox" name="topic" value="html">HTML
+                </label>
+            </p>
+        <p align="center"><button type="submit">Войти</button></p>
+    </form>
+</body>
+</html>
